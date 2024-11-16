@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var compareVersion=function(verson1,verson2){
+let string1=String(verson1)
+let string2=String(verson2)
+string1.splice(0,2)
+string2.splice(0,2)
+
+
+
+
+
+    if(verson1>verson2){
+        return 1
+    }
+    if(verson1<verson2){
+        return -1
+    }
+    if(verson1=verson2){
+        return 0
+    }
+}
+console.log(compareVersion("1.2","1.10"));
+
+    </script>
+</body>
+</html>

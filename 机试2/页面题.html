@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.bottom{
+    background-color: black;
+    color: grey;
+    width:2200px;
+    height: 200px;
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    left: -100px;
+}
+.bottom .list ol li{
+    list-style: none;
+    font-size: 12px;
+}
+.list{
+    display: flex;
+    position: absolute;
+    left: 410px;
+}
+.logo  img{
+    position:absolute;
+    left:400px;
+    width: 50px;
+    height: 50px;
+}
+.self{
+    font-size: 12px;
+    position: absolute;
+    left: 1200px;
+}
+.listhead{
+    color: aliceblue;
+}
+.top{
+    width: 2000px;
+    height: 60px;;
+    border-bottom: solid 1px grey;
+    position: relative;
+    left: -10px;
+}
+a{
+    text-decoration: none;
+    color: grey;  
+}
+.top div{
+    float: left;
+    position: absolute;
+    left: 320px;
+    
+}
+.top a{
+    float: left;
+    position:relative;
+    left:500px;
+    top: 0px;
+    width: 100px;
+    height:60px;
+    text-align: center;
+    
+    
+}
+button{
+    position:relative;
+    left: 600px;
+    width: 70px;
+    height:30px;
+    border-radius: 5px;
+    border: solid 1.5px;
+    
+}
+.login{
+    background-color: white;
+   
+}
+.signup{
+    background-color: rgba(7, 119, 157, 0.642);
+    color: white;
+    border: solid 1.5px rgba(7, 119, 157, 0.642);
+}
+.search{
+    position: relative;
+    left: 600px;
+    height: 25px;
+    width: 500px;
+    border-radius:5px;
+}
+.top a:hover{
+    background-color: rgb(244, 242, 242);
+    border-radius: 10px
+
+}
+.righttop{
+    position: relative;
+    left: 00px;
+    border-bottom: solid 1px grey;
+    height: 100px;
+    width: 1500px;
+}
+.askquestion{
+    position: relative;
+    left:1100px;
+    top:-90px;
+    height: 40px;
+    background-color: rgba(7, 119, 157, 0.642);
+    border-radius: 5px;
+    border: 1px;
+    color: aliceblue;
+}
+.rightregion{
+    position: relative;
+    left:100px;
+}
+
+pre{
+    height:150px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+    
+.coderegion{
+    background-color: rgb(240, 235, 235);
+    border-radius:20px;
+}
+.mokuai {
+   gap: 10px;
+}
+.geren{
+    width: 250px;
+   height: 110px;
+    background-color: rgb(197, 244, 244);
+    border-radius: 5px;
+    position: relative;
+    left: 500px;
+    top: -50px;
+    
+}
+.geren img:hover{
+    cursor: pointer;
+
+}
+.mingpian{
+    background-color: rgb(52, 51, 51);
+    color:white;
+    height:160px ;
+    width: 300px;
+    scale:0;
+    position: absolute;
+    left:-100px;
+    top:35px;
+    transition: 1s;
+    transition-delay: 1s;
+}
+.geren img:hover~.mingpian{
+   scale: 1;
+    
+}
+.rightregion{
+    border-bottom: solid 2px gray;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.sanjiao{
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid ;
+    position: relative;
+    left: 4px;
+}
+.leftslider{
+    position: relative;
+    left: 550px;
+    top: 200px;
+}
+.secondregion h4{
+    border-bottom: solid gray;
+    position: relative;
+    left: 600px;
+}
+.rightbottomleft{
+    width: 800px;
+}
+nav{
+    height:100%;
+    width:490px;
+    border-right: 1px;
+    box-shadow: 0.5px 0.5px;
+    border-bottom: none;
+    
+  
+   
+}
+nav div{
+    position: relative;
+    left: 159px;
+    width: 200px;
+    height:60px;
+    
+    
+    
+}
+.learnmore{
+    width: 250px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 5px;
+    border: transparent;
+    color: rgb(235, 229, 229);
+    position: relative;
+    left: 120px;
+    top: 90px;
+}
+.medium{
+    display: flex;
+    justify-content: space-around;
+}
+.firstnav{
+    list-style: none;
+    position: relative;
+    left: 200px;
+    
+    
+}
+.firstnav ul li{
+    font-size: 20px;
+    width: 250px;
+    height:50px;
+}
+.secondnav{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+.secondnav ul li{
+    font-size: 20px;
+    width: 250px;
+    height:50px;
+}
+.thirdnav{
+    position: relative;
+    top: 250px;
+    left: 200px;
+}
+.thirdnav ul li{
+    font-size: 20px;
+    width: 250px;
+    height:50px;
+}
+.fourthnav{
+    position: relative;
+    top: 400px;
+    left: 100px;
+}
+.fifthnav{
+position: relative;
+top:500px;
+left: 60px;
+font-size: 20px;
+}
+ nav li:hover{
+    background-color:gray;
+
+}
+.learnmore:hover{
+    background-color: lightcoral;
+}
+.label1{
+    background-color: wheat;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 1500px;
+    top: 200px;
+}
+.label2{
+    background-color: wheat;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 1500px;
+    top:500px;
+}
+.label1 .labelhead{
+  background-color:lightyellow;
+  width: 400px;
+  height: 50px;
+}  
+.label2 .labelhead{
+    background-color:lightyellow;
+  width: 400px;
+  height: 50px;
+}
+.Related{
+position: absolute;
+left: 1500px;
+top: 700px;
+line-height: 2;
+}
+.Related ul li{
+    list-style: none;
+    color:red;
+    
+}
+.HotNetwork{
+position: absolute;
+left: 1500px;
+top: 1500px;
+line-height: 2;
+}
+.Related ul li a:hover{
+       color:red
+}
+.HotNetwork ul li {
+    list-style: none;
+}
+.HotNetwork ul li a:hover{
+    color: red;
+}
+.left{
+    position: sticky;
+    top: 0;
+    
+}
+
+</style>
+</head>
+<body>
+    <div class="all">
+       <div class="top">
+        <div><img src="../素材们/images/素材2.png" alt=""></div>
+        <a href="">About</a><a href="">Products</a><a href="">Overflow</a>
+        <input type="text" class="search" value="Search...">
+        <button class="login">Log in</button>
+        <button class="signup">Sign up</button>
+       </div>
+       <div class="medium">
+           <div class="left">
+            <nav>
+              <div class="firstnav hover">
+                 <ul>
+                    <li style="list-style:url(../素材们/images/home.png);">Home</li>
+                    <li style="list-style: url(../素材们/images/questions.png);">QUestions</li>
+                    <li style="list-style: url(../素材们/images/tags-fill.png);">Tags</li>
+                 </ul>
+              </div>
+              <div class="secondnav  hover">
+                <ul>
+                    <li style="list-style: url(../素材们/images/users.png);">Users</li>
+                    <li style="list-style: url(../素材们/images/company.png);">Company</li>
+                </ul>
+              
+              </div>
+              <div class="thirdnav ">
+                <div style="position: relative;left: 100px; font-size: 50px;">LABS</div>
+                <ul>
+                    <li style="list-style: url(../素材们/images/Jobs.png);">Jobs</li>
+                    <li style="list-style: url(../素材们/images/icon_discussion.png);">Discussions</li>
+                </ul>
+              </div>
+              <div class="fourthnav">
+                <div style="font-size: 20px;">COLLECTIVES</div>
+                 
+              </div>
+              <div class="fifthnav">
+                <img src="" alt="">
+                <div><strong>Now avaliable on Stack Overflow for Teams</strong>AI features where you work search IDE ,and chat</div>
+                <input type="button" class="learnmore" value="Learn more">
+                <h6 style="position: relative;left: 200px;top: 100px;">Explore Teams</h6>
+              </div>
+
+
+
+
+
+
+
+            </nav>
+           </div>
+           <div class="right" >
+              <div class="righttop"><h2>What does and does not cause repaints/reflows when inside requestAnimationFrame</h2>
+            <p>Asked <strong>8 years 7monthes ago</strong>   Modified <strong>8 years 7monthes ago</strong>  Visted <strong>2k times</strong></p>
+            <input type="button"value="Ask Question" class="askquestion">
+            
+            </div>
+              <div class="rightbottom">
+                <div class="rightbottomleft">
+                 <div class="firstregion">
+                    <div class="leftslider">
+                        <div class="circle"><div class="sanjiao"></div></div>
+                        <h3 style="position: relative;left: 7px;">5</h3>
+                        <div class="circle"><div class="sanjiao" style="transform:rotate(180deg);top: 10px;"></div></div>
+                    </div>
+                    <div class="rightregion">
+                         <h4>For example,if i do something like</h4>
+                        <div class="coderegion"><pre>requestAnimationFrame(function(){ 
+                            el.appendChild(otherEl)
+                            el.appendChild(anotherEl)
+                           anotherEl.removeChild(someOtherEl)
+                           anotherEl.removeChild(yetAnotherEl)
+                        })</pre></div>
+                        <div><h4>
+                             Does that cause a(synchronous?)repaint/reflow thus voiding the purpose of <code style="background-color: antiquewhite;border-radius: 10px;"><strong>requestAnimationFrame</strong></code>?
+                             <h4>Or, will the browser be smart and wait until after that frame is complete ( after all those DOM manipulations are complete) in order to finally paint the resulting DOM structure?</h4>
+                             <h4>What are all the things that can cause repaints/ reflows, and that we would want to avoid doing while inside a requestAnimationFrame?</h4>
+                             <h4>The list of styles in this <p style="color: blue;display: inline;text-decoration: underline;">html5rocks article</p> mention only style that (I think) cause repaint/ reflow when they are modified. I'm also curious to know which JavaScript properties( and on which object they are on) cause reflow when being accessed (i. e. reflow happens in order to be able to get the value of a certain property).</h4>
+                            <div style="display: flex;" class="mokuai">
+                                <div style="background-color: rgb(217, 212, 212); border-radius: 3px;">JavaScript</div>
+                                <div style="background-color: rgb(217, 212, 212); border-radius: 3px;">html</div>
+                                <div style="background-color: rgb(217, 212, 212); border-radius: 3px;">animation</div>
+                                <div style="background-color: rgb(217, 212, 212); border-radius: 3px;">graphics</div>
+                                <div style="background-color: rgb(217, 212, 212); border-radius: 3px;">requestanimationframe</div>
+                            </div>
+                            <br>
+                            <br>
+                            <p style="float: left;">Share improve this question Follow</p> <p style="position: relative;color: blue;">edited Apr 21.2016 at 4:00</p>
+                             <div class="geren">
+                                <p>asked Apr 7 2016 at 3:05</p>
+                                <img src="../素材们/images/素材3.png" alt="" style="float: left;position: relative;left: 10px;">
+                                <p style="position: relative;left: 20px;">trusktr</p>
+                                <p style="position: relative;left: 20px;"><strong>45.2k</strong></p>
+                                <div class="mingpian">
+                                
+                                    <img src="../素材们/images/素材3.png" alt="" style="float: left;position: relative;left: 10px;">
+                                    <p style="position: relative;left: 20px;">trusktr</p>
+                                    <p style="position: relative;left: 20px;"><strong>45.2k</strong></p>
+                                    <p>Joe Pea(personal site)</p>
+                                </div>
+                             </div>
+                        </div></div>
+                 <div class="secondregion" style="position: relative;left: -500px;">
+                      <h4>are you doing that on a per-frame basis i. e. appending children on a regular basis? - Tahir Ahmed Apr 7,2016 at 6:21</h4>
+                      <h4>@TahirAhmed Not necessarily.It could be every few seconds, or possibly even less than a second.Though,I wouldn't want to impose a limit on it. The use case could be anything (f. e. adding removing elements every frame to make some sort of quickly blinking effect). - trusktr Apr 7, 2016 at 21:26</h4>
+                      <h4>adding removing elements every frame would I think be far too quick for you to notice anything visually because browsers tend to render 60 frames per second.-Tahir Ahmed Apr 8,2016 at 2:21</h4>
+                      <h4>but, I get that this is an example scenario and rAF doesn't have a purpose here. You only want to understand that on a single frame, how the above appending and removing child operations would perform.
+                        -Tahir Ahmed Apr 8, 2016 at 2:22</h4>
+                      <h4>1 another question, are you using the word repaints in general here because a frame consists of a number of operations, one of them is Paint. Take a look at this video and this article by Paul Lewis.-Tahir Ahmed Apr 8,2016 at 2:44</h4>
+                      <h4 style="color: blue; border-bottom: transparent;">Show 1 more comment</h4>
+                 </div>
+                 <div class="thirdregion" style="border-bottom: 3px solid gray;">
+                    <h2 style="position: relative;left: 100px;top: 100px;">1.Answer
+                    </h2>
+                    <div class="store" style="position: relative;left: 600px;top:60px;">store by: <select name="" id="" style="width: 200px;height: 30px;position: relative;" ><option value="Highest secondregion"></option></select></div>
+                    <div class="leftslider" style="position: relative;left: 50px;">
+                        <div class="circle"><div class="sanjiao"></div></div>
+                        <h3 style="position: relative;left: 7px;">2</h3>
+                        <div class="circle"><div class="sanjiao" style="transform:rotate(180deg);top: 10px;"></div></div>
+                    </div>
+                    <div class="" style="position: relative;left:100px;">
+                         <h4 style="border-left: 5px solid gray; color: gray;">Does that cause a ( synchronous?) repaint to happen during the time when we' re trying to avoid causing paints, thus voiding the purpose of requestAnimationFrame?</h4>
+                        <h4>I don't quite understand you' re first question but I' ll try to answer it anyway.</h4>
+                        <h4>Adding or removing elements from the DOM triggers a reflow, whilst requestAnimationFrame is a formal version of the translateZ(0) or translate3d(0,0,0) trick to force a layer creation. In that sense, triggering a reflow is irrelevant to using rAF. You mentioned a"repaint to happen during the time when we' re trying to avoid causing paints"which I assume you' re referring to throttling which you should be implementing anyway. Let me know if I didn't answer it properly.</h4>
+                        <h4 style="border-left: 5px solid gray; color: gray;">Or, will the browser be smart and wait until after that frame is complete ( after all thoseDOM manipulations are complete) in order to finally paint the resulting DOM structure?</h4>
+                        <h4>Given that all your appends and removes are in the same rAF call, the browser ( to my understanding) should paint them all together in a single frame.</h4>
+                        <h4 style="border-left: 5px solid gray; color: gray;">What are all the things that can cause repaints/ reflows, and that we would want to avoid doing while inside a requestAnimationFrame?</h4>
+                        <h4>Repaints are triggered by anything which causes a change in the visibility but does not affect the layout. Opacity doesn't trigger a repaint so it's much cheaper to animate.</h4>
+                        <h4>Reflow affects the layout of the whole or a portion of the page causing the size and positions of the affected elements to be recalculated and should therefore be avoided in animations. Translate, rotate and scale however don't trigger reflow.</h4>
+                        <h4>You can read more about this here and get a list of the css properties which trigger layout and repaint.</h4>
+                        <h4>Lastly just to clear up that last question, repaints and layouts occur whether or not they' re inside or outside of a rAF. Just keep that in mind.
+                            Share Improve this answer Follow</h4>
+                        <h6>Share improve this Follow</h6>
+                        </div>
+                 </div>        
+                 <div class="fourthregion" style="position: relative;left: -500px;">
+                    <h4 style="position: relative;left: 600px;border-bottom: 2px solid gray;">I believe I meant"repaint and/ or reflow", not just repaints I'm interested in. A reflow causes a repaint right, since things have been re-laid-out they need to be re-painted I would think. So, I guess I'm actually curious to know what causes reflows ( lay outs). - trusktr Apr 21, 2016 at 4:20</h4>
+                    <h4  style="position: relative;left: 600px;border-bottom: 3px solid gray;">That's a nice list of things that trigger reflow( layout). But, the article doesn't mention which things not to read where reading the property causes reflow in order to determine the value of the property being read.
+                        - trusktr Apr21,2016 at4:22</h4>
+                    <h4  style="position: relative;left: 600px;border-bottom: 3px solid gray;">trusktr I'm not aware of any properties which trigger reflow on being read, especially given that reading properties do not affect their style in the DOM. As far as I'm concerned, all the properties are stored in the object's prototype and are retrieved from there. Perhaps you' re referring to thrashing where we request a style value, change the value, request the value, change the value, etc. to cause a forced synchronous layout? And yes layout causes a repaint so it's particularly taxing on animation performance. Basically keep to rotate, translate, scale and opacity to be on the safe side.-Flying Emu Apr 21,2016 at 12:26</h4>
+                    <h6 style="position: relative;left: 600px;border-bottom: 3px solid gray ;color:lightgray">add a commit</h6>
+                 </div>
+                 <div class="fifthregiion" style="position: relative;left: -500px;">
+                    <h2 style="position: relative;left: 600px;">Your answer</h2>
+                    <textarea name="" id="" style="width: 1000px;height:300px;position: relative;left: 600px;"></textarea>
+                 </div>       
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </div>
+                 </div>
+                 <div></div>
+                 <div></div>
+                </div>
+                <div class="rightbottomright">
+                   <div class="label1">
+                    <div class="labelhead"><strong>The Overflow Blog</strong></div>
+                    <div class="labelcontent">A student of Geoff Hinton, Yann LeCun, and Jeff Dean explains where Al is headed
+                        Meet the guy responsible for building the Call of Duty game engine
+                        Featured on Meta</div>
+                   </div>
+                   <div class="label2">
+                    <div class="labelhead" style="text-align: left"><strong>Featured on Meta</strong></div>
+                    <div class="labelcontent">More network sites to see advertising test
+                        We' re ( finally!) going to the cloud!
+                        Call for testers for an early access release of a Stack Overflow extension…
+                        Related</div>
+                   </div>
+                   <div class="Related">
+                   <h2>Related</h2>
+                   <ul >
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">6</a></li>
+                    <li><a href="">7</a></li>
+                    <li><a href="">8</a></li>
+                    <li><a href="">9</a></li>
+                    <li><a href="">10</a></li>
+                   </ul>
+                   </div>
+                    <div class="HotNetwork">
+                        <h2>Hot Network QUestions</h2>
+                        <ul>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+              </div>
+           </div>
+       </div>
+       <div class="bottom">
+        <div class="logo"><img src="../素材们/images/素材1.png" alt=""></div>
+        <div class="list">
+            <ol class="firstol">
+                <li class="listhead">STACK OVERFLOW</li>
+                <li></li>
+                <li>Questins</li>
+                <li>Help</li>
+                <li>Chat</li>
+            </ol>
+            <ol>
+                <li class="listhead">PRODUCTS</li>
+                <li>Teams</li>
+                <li>Advertising</li>
+                <li>Talent</li>
+            </ol>
+            <ol>
+                <li class="listhead">COMPANY</li>
+                <li>About</li>
+                <li>Press</li>
+                <li>Work Here</li>
+                <li>Legal</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Contact Us</li>
+                <li>Cookie Settings</li>
+                <li>Cookie Policy</li>
+            </ol>
+            <ol>
+                <li class="listhead">STACK EXCHANGE NETWORK</li>
+                <li>Technology</li>
+                <li>Culture & recreation</li>
+                <li>Life & arts</li>
+                <li>Science</li>
+                <li>Professional</li>
+                <li>Business</li>
+                <li></li>
+                <li>Api</li>
+                <li>Data</li>
+            </ol>
+        </div>
+        <div class="self">
+            <div>
+                <p>Blog Facework Twitter Linkedin instagram</p>
+               
+            </div>
+        </div>
+       </div>
+
+
+
+    </div>
+</body>
+</html>

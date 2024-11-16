@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums=[4,1,2,1,2]
+        
+function findOne(x){
+        for(let i=0;i<x.length;i++){
+              const a= x.splice(i,1) 
+                if(!x.includes(a)){
+                   return a
+                   break
+              }
+        }  
+}
+function switchArr(x){
+         let y=x[0]
+         return y
+}
+console.log(switchArr(findOne(nums)))
+
+
+
+    </script>
+</body>
+</html>
